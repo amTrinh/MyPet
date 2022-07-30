@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-user.css">
+    <script type="module" src="javascript/import_template.js"></script>
+    <script type="module" src="javascript/home-product.js" defer></script>
+    <script src="javascript/javascript.js" defer></script>
+    <script src="javascript/js-user.js" defer></script>
+    <script src="javascript/js_bg_menu.js" defer></script>
+    <title>My Account</title>
+</head>
+<body>
+    <div id="headerContain">
+    </div>
+    <div class="accountBody">
+        <div class="accountContain">
+            <div class="accountNav">
+                <div class="left">
+                    <div class="imgUser">
+                        <div>
+                            <img src="image/avt.jfif" alt="avt">
+                        </div>
+                        <div class="textAcc">
+                            <p>Account of</p>
+                            <h5>Amt.Rinh</h5>
+                        </div>
+                    </div>
+                    <div class="categories">
+                        <ul class="categoriUl">
+                            <li>Manage My Account</li>
+                            <ul class="ulManage">
+                                <li class="arrtitle backgroungLi">
+                                    <i class="fas fa-user"></i>
+                                    <p>My profile</p>
+                                </li>
+                                <li class="arrtitle">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <p>Address book</p>    
+                                </li>
+                                <li class="arrtitle">
+                                    <i class="fas fa-bell"></i> 
+                                    <p>Notify</p>
+                                </li>
+                            </ul>
+                            <li>My Order</li>
+                            <ul class="ulOrder">
+                                <li class="arrtitle">
+                                    <i class="far fa-list-alt"></i>
+                                    <p>My returns</p>    
+                                </li>
+                                <li class="arrtitle">
+                                    <i class="fas fa-ban"></i>
+                                    <p>My Cancellations</p>    
+                                </li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="logOut">
+                        <button><a href="login.html">Log Out</a></button>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="rightContaint">
+                        <div class="boxDetailInfo profileContain">
+                            <div class="profileleft">
+                                <h3>Personal information</h3>
+                                <form action="" id="form-info-pers">
+                                    <div class="input-info">
+                                        <label for="username">Full name</label>
+                                        <input type="text" readonly name="usernameMain" id="usernameMain" placeholder="Enter full name" value="Nguyen Thi Mai Trinh">
+                                        <label for="nickname">Nickname</label>
+                                        <input type="text" readonly name="nickname" id="nickname" placeholder="Enter nickname" value="Amt.Rinh">
+                                        <label for="birthday">Birthday</label>
+                                        <div>
+                                            <input type="date">
+                                        </div>
+                                        <label for="gender">Gender</label>
+                                        <div id="sex">
+                                            <input type="radio" name="gender" id="male">
+                                            <label for="male">male</label>
+                                            <input type="radio" name="gender" id="female">
+                                            <label for="female">female</label>
+                                            <input type="radio" name="gender" id="another">
+                                            <label for="another">another</label>
+                                        </div>
+                                    </div>
+                                    <div class="btnChanges">
+                                        <button type="button" onclick="return SaveInfoUser();">Save changes</button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="profileright">
+                                <div>
+                                    <h3>Phone number and Email</h3>
+                                    <div>
+                                        <div class="changePhone changeMain">
+                                            <div class="proPhone infoAnother">
+                                                <div class="divIconInfo">
+                                                    <i class="fas fa-phone-alt"></i>
+                                                    <div>
+                                                        <p>Phone number</p>
+                                                        <p id="PhoneInfo">0941695790</p>
+                                                    </div>
+                                                </div>
+                                                <div class="btnUpdate">
+                                                    <button type="button" onclick="showDetail(detailChangePhone,phoneNumber);">Update</button>
+                                                </div>
+                                            </div>
+                                            <div id="detailChangePhone" class="detailChangePhone detailChange">
+                                               <form action="user.html" method="post">
+                                                    <div>
+                                                        <i class="fas fa-phone-alt"></i>
+                                                        <input type="number" id="phoneNumber" required>
+
+                                                    </div>
+                                                    <div class="btnChange">
+                                                        <button type="button"  onclick="checkphone();">Save Changes</button>
+                                                    </div>
+                                               </form>
+                                            </div>
+                                        </div>
+                                        <div class="changeMail changeMain">
+                                            <div class="proMail infoAnother">
+                                                <div class="divIconInfo">
+                                                    <i class="fas fa-envelope"></i>
+                                                    <div>
+                                                        <p>Email address</p>
+                                                        <p id="emailInfo">19522405@gm.uit.edu.vn</p>
+                                                    </div>
+                                                </div>
+                                                <div class="btnUpdate">
+                                                    <button type="button" onclick=" showDetail(detailChangeMail,Mail);">Update</button>
+                                                </div>
+                                            </div>
+                                            <div id="detailChangeMail" class="detailChangeMain detailChange">
+                                                <form action="">
+                                                    <div>
+                                                        <i class="fas fa-envelope"></i>
+                                                        <input type="email" id="Mail" required placeholder="example12@gmail.com">
+                                                    </div>
+                                                    <div class="btnChange">
+                                                        <button type="button" onclick="saveEmail();">Save Changes</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h3>Security</h3>
+                                        <div class="changePass changeMain">
+                                            <div class="proPass infoAnother">
+                                                <div class="divIconInfo">
+                                                    <i class="fas fa-lock"></i>
+                                                    <div class="pPassword">
+                                                        <p>Password</p>
+                                                    </div>
+                                                </div>
+                                                <div class="btnUpdate">
+                                                    <button type="button" onclick="showDetail(detailChangePass,passW);">Update</button>
+                                                </div>
+                                            </div>
+                                            <div id="detailChangePass" class="detailChangeMain detailChange">
+                                                <form action="">
+                                                    <div>
+                                                        <label for="newpassword">A new password</label>
+                                                        <i class="fas fa-lock"></i>
+                                                        <i id="eye1" class="far fa-eye" onclick="hidePass(passW,eye1,eyeSlash1);" ></i>
+                                                        <i id="eyeSlash1" class="far fa-eye-slash" onclick="showPass(passW,eyeSlash1,eye1);"></i>
+                                                        <input type="password" id="passW" oninput="getPass();">
+
+                                                        <label for="Enewpassword">Enter new password</label>
+                                                        <i id="iconNew" class="fas fa-lock"></i>
+                                                        <i id="eye" class="far fa-eye" onclick="hidePass(EpassW,eye,eyeSlash);"></i>
+                                                        <i id="eyeSlash" class="far fa-eye-slash"  onclick="showPass(EpassW,eyeSlash,eye);"></i>
+                                                        <input type="password" id="EpassW" oninput="checkPass();">
+                                                        <div id="notifyPass"></div>
+                                                    </div>
+                                                    <div class="btnChange">
+                                                        <button type="button" onclick="savePassNew();">Save Changes</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boxDetailInfo AddressContain">
+                            <h3>Address</h3>
+                            <div class="infoAddress">
+                                <div class="AddressDetail">
+                                    <div>
+                                        <p class="NameInfo">
+                                            <b>Nguyen Thi Mai Trinh </b>
+                                            <span> <i class="far fa-check-circle"></i>Defaul address</span>
+                                        </p>
+                                        <div class="infocontact">
+                                            <p>Address: <span>Mr., Cua Dong Ward, Hoan Kiem District, Hanoi</span></p>
+                                            <p>phone: <span>0941695790</span></p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="edit">Edit</button>
+                                        <button type="button" class="delAdd">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="AddressDetail">
+                                    <div>
+                                        <p class="NameInfo">
+                                            <b>Nguyen Thi Mai Trinh </b>
+                                            <span></span>
+                                        </p>
+                                        <div class="infocontact">
+                                            <p>Address: <span>Mr., Cua Dong Ward, Hoan Kiem District, Hanoi</span></p>
+                                            <p>phone: <span>123456789</span></p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="edit">Edit</button>
+                                        <button type="button" class="delAdd">Delete</button>
+                                    </div>
+                                </div>
+                                <div id="new_info_delivery" class="AddressDetail">
+                                    <div>
+                                        <p class="NameInfo">
+                                            <b id="newname"> </b>
+                                            <span></span>
+                                        </p>
+                                        <div class="infocontact">
+                                            <p>Address: <span id="new_address"></span></p>
+                                            <p>phone: <span id="new_phone"></span></p>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="edit">Edit</button>
+                                        <button type="button" class="delAdd">Delete</button>
+                                    </div>
+                                </div>
+                                <div class="NewAddress">
+                                    <p class="iconAddAddress">
+                                        <i class="fas fa-plus"></i>
+                                        Add new address
+                                    </p>
+                                    <div class="overlay overlay">
+                                        <form action="" method="post" id="newAddress">
+                                            <div class="formContain">
+                                                <label for="username">Full name:</label>
+                                                <input type="text" name="username" id="username" placeholder="Enter full name" value="Nguyen Thi Mai Trinh" required>
+                                                <label for="phone">Phone number: </label>
+                                                <input type="number" name="phone" id="phone" placeholder="Enter phone number" value="0941695790" required>
+                                                <label for="addressInfo">Address:</label>
+                                                <textarea name="addressInfo" id="addressInfo" cols="30" rows="5" placeholder="Enter address" required></textarea>
+                                            </div>
+                                            <div class="btnAddress">
+                                                <button type="button" id="deleteAdd" onclick="hideNewAddre()">Cancel</button>
+                                                <button type="button" id="shipAddress" onclick="addAddre();">Add</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boxDetailInfo PaymentContain">
+                            <p>You don't have any notifications yet</p>
+                        </div>
+                        <div class="boxDetailInfo OrderContain">
+                            <h3>My returns</h3>
+                            <table class="tableOrder">
+                                <thead>
+                                    <tr>
+                                        <th>Code orders</th>
+                                        <th>Purchase date</th>
+                                        <th>Product</th>
+                                        <th>amount</th>
+                                        <th>total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1234567</td>
+                                        <td>02/03/2021</td>
+                                        <td>Husky Sibir</td>
+                                        <td>1</td>
+                                        <td>$1903.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1234567</td>
+                                        <td>02/03/2021</td>
+                                        <td>Husky Sibir</td>
+                                        <td>1</td>
+                                        <td>$1903.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1234567</td>
+                                        <td>02/03/2021</td>
+                                        <td>Husky Sibir</td>
+                                        <td>1</td>
+                                        <td>$1903.99</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="boxDetailInfo CancelContain">
+                            <h3>My Cancellations</h3>
+                            <table class="tableOrder">
+                                <thead>
+                                    <tr>
+                                        <th>Code orders</th>
+                                        <th>Purchase date</th>
+                                        <th>Product</th>
+                                        <th>amount</th>
+                                        <th>total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>0246851</td>
+                                        <td>21/06/2021</td>
+                                        <td>Shiba Inu</td>
+                                        <td>1</td>
+                                        <td>$1999.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>0246851</td>
+                                        <td>21/06/2021</td>
+                                        <td>Shiba Inu</td>
+                                        <td>1</td>
+                                        <td>$1999.99</td>
+                                    </tr>
+                                    <tr>
+                                        <td>0246851</td>
+                                        <td>21/06/2021</td>
+                                        <td>Shiba Inu</td>
+                                        <td>1</td>
+                                        <td>$1999.99</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footerContain">
+    </div>
+    <div id="iconContain">
+    </div>
+</body>
+</html>

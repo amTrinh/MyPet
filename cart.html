@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-product-detail.css">
+    <link rel="stylesheet" href="css/style-cart.css">
+    <script type="module" src="javascript/import_template.js"></script>
+    <script type="module" src="javascript/template_voucher.js"></script>
+    <script type="module" src="javascript/home-product.js" defer></script>
+    <script src="javascript/javascript.js" defer></script>
+    <script src="javascript/js-cart.js" defer></script>
+    <script src="javascript/js-shopping.js" defer></script>
+    <title>Cart</title>
+</head>
+<body>
+    <div id="headerContain">
+    </div>
+    <div class="banner-cart">
+        <div class="position">
+            <p>
+                <a href="home.html">Pet</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="shopping.html">Shopping</a>
+                <i class="fas fa-chevron-right"></i>
+                <a href="#">Cart</a>
+            </p>
+        </div>
+        <div class="container cart-navbar">
+            <div>
+                <div class="cart-head">
+                    <div class="head-checkbox">
+                        <input id="checkall" type="checkbox" name="all">
+                        <label for="all">Products</label>
+                    </div>
+                    <div class="arr-properties">
+                        <ul>
+                            <li>Price</li>
+                            <li>Quantity</li>
+                            <li>Sum</li>
+                            <li class="deleteAll" title="Xóa các mục đã chọn">
+                                <i class="fas fa-trash-alt"></i>
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+                <div class="cart-body">
+                    <!-- display product -->
+                    
+                </div>
+            </div>
+            <div class="cart-foot">
+                <div class="vouchers">
+                    <p>Voucher</p>
+                    <div class="contantVoucher btnmini bordercolor">
+                        <div class="image">
+                            <img src="image/minivoucherimage.png" alt="image voucher">
+                        </div>
+                        <div class="context">
+                            <p title="Giảm 30K phí vận chuyển">$30.00 of shipping fee</p>
+                            <div>
+                                <button class=" unchecked">Uncheck</button>
+                            </div>
+                        </div>
+                    </div>
+                    <i id="selectVoucher">
+                        <i class="fas fa-ticket-alt"></i>
+                        Select or Enter Promotion
+                    </i>
+                </div>
+                <div class="total-foot">
+                    <div class="titleBuy">
+                        <div>
+                            <p>Provisional</p>
+                            <h3 id="total">$0.00</h3>
+                        </div>
+                        <div>
+                            <p>Discount</p>
+                            <h4 id="discount">$0.00</h4>
+                        </div>
+                    </div>
+                    <div class="totalBuy">
+                        <p>Total</p>
+                        <h2 id="value-final">$0.00</h2>
+                    </div>
+                </div>
+                <button id="purchases" class="purchases">
+                    <a style="color: white;">Purchases</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="voucher">
+        <div id="voucher_container">
+        </div>
+        <div class="successVoucher">
+            <div class="userVoucher">
+                <div>
+                    <i class="fas fa-check-circle"></i>
+                    <p>Promotion code has been successfully applied</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="nullProduct">
+        <div class="userVoucher">
+            <div>
+                <i class="fas fa-check-circle"></i>
+                <p>You haven't selected any products to buy yet</p>
+            </div>
+        </div>
+    </div>
+    <div id="footerContain">
+    </div>
+    <div id="iconContain">
+    </div>  
+</body>
+</html>

@@ -1,0 +1,433 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.logo img{
+    height: 70px;
+    width: auto;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.inner-header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-header{
+    display: flex;
+}
+ul#main-menu a{
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: all 0.5s ease-in-out;
+}
+.logo span{
+    transition: all 0.5s ease-in-out;
+}
+#main-menu a:hover{
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+}
+.main-menu-action{
+    background-color: blue;
+    color: white;
+    border-radius: 20px;
+}
+
+.user-btn{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+#image-avt{
+    margin-right: 5px;
+    border-radius: 50%;
+    border: 1px solid rgb(185, 185, 185);
+    width: 30px;
+}
+.cart-btn{
+    position: relative;
+    cursor: pointer;
+}
+.cart-icon{
+    height: 100%;
+    font-size: 1.25em;
+    justify-content: center;
+    align-items: center;
+}
+.cart-icon i{
+    margin-top: 5px;
+}
+.cart-items{
+    position: absolute;
+    top: -5px;
+    right: -8px;
+    background-color: red;
+    color: white;
+    padding: 0 5px;
+    border-radius: 30%
+}
+.sticky{
+    background: rgb(255, 255, 255);
+    border: 0;
+    color: black;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.sticky #login{
+    border: 1px solid white;
+    color: white;
+}
+.sticky .logo span{
+    font-size: 40px;
+}
+/* section  */
+.banner{
+    background-size: cover;
+    min-height: 480px;
+}
+.section-nav{
+    max-width: 1200px;
+}
+/* section home  */
+
+#home{
+    border-radius: 10px;
+    background-color: rgba(169, 184, 190, 0.5);
+    padding: 20px;
+    position: absolute;
+    height: fit-content;
+    top: 35%;
+    left: 5%;
+    max-width: 600px;
+}
+#home h2{
+    font-size: 40px;
+}
+#shopping-title{
+    margin-bottom: 60px;
+}
+#home p{
+    text-indent: 20px;
+    text-align: justify;
+    margin: 30px 0 20px 0 ;
+}
+.seeAbout:hover{
+    opacity: 0.5;
+    color: black;
+}
+#home a{
+    text-transform: capitalize;
+    background-color: rgb(55, 55, 238);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+}
+.title{
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+ /* section shopping  */
+#banner-shopping{
+    background: url(../image/background-nav.png) no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+.shop-main-home{
+    text-align: center;
+}
+.shop-main-home h3{
+    font-size: 30px;
+}
+.logo-menu-product, #logo-pets-home{
+    border-radius: 50%;
+}
+#logo-pets-home{
+    border: 5px solid rgba(15, 186, 253, 0.432);
+}
+.detail-home{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-column-gap: 2.5rem;
+    grid-row-gap: 2rem;
+}
+.section-navbar{
+    width: 90vw;
+    margin: 0 auto;
+}
+.shop-main-home{
+    display: grid;
+    grid-template-columns: 1fr 5fr 0.7fr;
+    grid-gap: 40px;
+}
+.product-pet{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+}
+.product-pet-image{
+    border-radius: 5px;
+}
+.img-footer{
+    display: grid;
+    text-align: start;
+    grid-template-columns: 1fr auto;
+}
+.related{
+    position: relative;
+}
+.img-container{
+    overflow: hidden;
+    position: relative;
+}
+.img-container .bag-btn{
+    height: 40px;
+    position: absolute;
+    padding: 10px;
+    border-radius: 5px;
+    top: 50%;
+    right: 0;
+    background-color: #0770cd;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    transform: translateX(101%);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.img-container:hover .bag-btn{
+    transform: translateX(0);
+}
+.bag-btn:hover{
+    color: black;
+}
+.bag-btn:hover .fa-shopping-cart{
+    color: black;
+}
+.fa-shopping-cart{
+    margin-right: 0.5em;
+    color: white;
+    transition: all 0.5 ease-in-out;
+}
+.product-pet-image{
+    display: block;
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+.img-container:hover .product-pet-image{
+    opacity: 0.5;
+}
+.product-pet h3{
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    letter-spacing: 2px;
+}
+.product-pet h4{
+    margin-top: 0.5rem;
+    letter-spacing: 2px;
+    color: black;
+    text-transform: capitalize;
+}
+.see-more-dog{
+    position: relative;
+    text-align: center;
+}
+.see-more-btn{
+    height: 100%;
+    line-height: 100%;
+    margin: auto 0;
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+}
+.see-more-btn i{
+    vertical-align: middle;
+}
+.see-more-btn a:hover{
+    color: blue;
+}
+
+.see-more-btn:hover i{
+    color: blue;
+}
+.line-shop{
+    height: 5px;
+    background-color: rgb(176, 176, 196);
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.line-min{
+    width: 15vw;
+    border-radius: 5px;
+    height: 5px;
+    background-color: blue;
+}
+.see-more-detail a{
+    font-weight: bold;
+    line-height: 60px;
+    text-decoration-line: underline;
+}
+.see-more-detail a:hover{
+    color: blue;
+}
+/* section services  */
+
+/* section reviews  */
+#banner-reviews{
+    min-height: 500px;
+}
+.inner-reviews h2{
+    margin: 20px 0 100px 0;
+}
+.body-home-reviews{
+    width: 70vw;
+    height: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.reviews-contain{
+    width: 50vw;
+}
+.reviews-image{
+    height: 100px;
+}
+.review_img{
+    border-radius: 50px;
+    border: 2px solid rgb(255, 179, 118);
+    box-shadow: 0px 1px 5px gray;
+    
+}
+.navbar-icon i{
+    font-size: 40px;
+    cursor: pointer;
+}
+.reviews-content{
+    margin: 20px 0;
+}
+.reviews-content p{
+    height: 100px;
+    
+}
+.reviews-contain{
+    transition: all 0.5s ease-in-out;
+    display: block;
+}
+.reviews-contain h4{
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.footer-reviews{ 
+    /* margin: 60px; */
+    display: flex;
+    justify-content: center;
+}
+.footer-reviews i{
+    margin: 0 5px;
+    color: blue;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.bgIcon{
+    background-color: blue;
+}
+.review-hidden{
+    display: none;
+}
+/* footer  */
+.navbar-footer{
+    background: url(../image/background-footer.jpg) repeat;
+    min-height: 200px;
+}
+.footer-bottom{
+    background-color: black;
+}
+.footer-bottom h4{
+    color: white;
+    padding: 10px 0;
+
+}
+.footer-body{
+    display: flex;
+    justify-content: space-between;
+    height: max-content;
+}
+.footer-list{
+    margin: 20px 0 0 0 ;
+}
+
+footer h3{
+    margin-top: 20px;
+    font-size: 25px;
+}
+.footer-list li{
+    padding: 5px 0;
+}
+
+.footer-bottom h4{
+    text-align: center;
+}
+/* css icons */
+.navbar-icon-footer{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9;
+}
+.navbar-icon-footer i{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 20px;
+    color: #0055ff;
+    cursor: pointer;
+    z-index: 9;
+    background-color: cornsilk;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.navbar-icon-footer ul li{
+    margin: 5px 0;
+}
+
+.navbar-icon-footer i:hover{
+    opacity: 0.5;
+}
+
+
+

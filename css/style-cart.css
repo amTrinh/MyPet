@@ -1,0 +1,335 @@
+
+.banner-cart{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.cart-navbar{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+    position: relative;
+}
+.cart-head, .cart-body{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 50%);
+    margin-bottom: 10px;
+    padding: 10px 30px;
+}
+.cart-head, .cart-container{
+    display: flex;
+    justify-content: space-between;
+}
+.cart-head .arr-properties ul, .cart-container ul{
+    display: flex;
+}
+.cart-head .arr-properties ul li, .cart-container ul li{
+    width: 130px;
+    text-align: center;
+}
+.cart-container{
+    margin-top: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid gray ;
+}
+.cart-container div{
+    width: max-content;
+}
+.head-checkbox label{
+    margin-left: 10px;
+}
+.cart-container ul li{
+    line-height: 100px;
+}
+.cart-container ul li:last-child{
+    cursor: pointer;
+}
+.deleteAll{
+    cursor: pointer;
+}
+.deleteAll:hover i{
+    color: red;
+}
+.delete-product:hover i{
+    color: red;
+}
+.btn-select-amount{
+    margin-top: 30px;
+    margin-right: 0;
+    width: fit-content;
+    justify-content: center;
+}
+.cart-container a{
+    text-transform: capitalize;
+    font-size: 18px;
+}
+.image-product-cart{
+    height: 100px;
+    vertical-align: middle;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+.cart-container a:hover{
+    opacity: 0.9;
+    color: red;
+}
+.cart-container .delete-product{
+    background-color: inherit;
+    border: 0;
+    cursor: pointer;
+}
+.cart-container .total{
+    color: red;
+}
+.cart-container .delete-product:hover{
+    color: red;
+}
+.cart-foot{
+    width: 20vw;
+    height: fit-content;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 100px;
+}
+.total-foot, .vouchers{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 50%);
+    margin-bottom: 10px;
+    padding: 10px 20px;
+}
+.vouchers{
+    line-height: 2;
+}
+#selectVoucher{
+    font-size: 14px;
+    cursor: pointer;
+}
+#selectVoucher:hover{
+    color: blue;
+}
+.titleBuy{
+    padding-bottom: 20px;
+    line-height: 1.5;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.295);
+}
+.total-foot .titleBuy div, .totalBuy{
+    display: flex;
+    justify-content: space-between;
+}
+.totalBuy{
+    padding-top: 20px;
+}
+.cart-foot button.purchases{
+    cursor: pointer;
+    border: 0;
+    padding: 10px 20px;
+    width: 20vw;
+    background-color: #ee4d2d;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+}
+.cart-foot button:hover{
+    opacity: 0.9;
+}
+/* voucher */
+.voucher{
+    padding: 30px 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(216, 214, 214, 0.39);
+}
+.voucher .voucherContain{
+    position: relative;
+    padding: 20px;
+    height: 600px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 50%);
+    width: 37vw;
+    margin: 0 auto;
+    background-color: white;
+}
+.vouchercontent img{
+    width: 100px;
+    padding: 10px;
+    margin-right: 5px;
+}
+.voucherContain .voucherHead .voucherTitle{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.voucherContain .voucherHead .voucherTitle i{
+    font-size: 20px;
+    cursor: pointer;
+}
+.voucherContain .voucherHead .inputVoucher{
+    background-color: rgb(223, 223, 223);
+    padding: 15px;
+    border-radius: 5px;
+}
+.voucherContain .voucherHead .inputVoucher form{
+    position: relative;
+    /* width: 450px; */
+    display: flex;
+    justify-content: space-between;
+}
+.voucherContain .voucherHead .inputVoucher form i{
+    position: absolute;
+    top: 25%;
+    font-size: 20px;
+    color: gray;
+    left: 10px;
+}
+.voucherContain .voucherHead .inputVoucher form input{
+    padding: 10px 10px 10px 40px;
+    outline: none;
+    border: 0;
+    border-radius: 5px;
+    width: 430px;
+    text-decoration: none;
+}
+.voucherContain .voucherbtn{
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(62, 62, 253);
+}
+.voucherContain .voucherHead .inputVoucher form button{
+    padding: 10px;
+}
+.voucherContain .voucherHead .inputVoucher form button:hover{
+    opacity: 0.7;
+}
+.voucherContain  .voucherBody .titleVoucherBody{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.voucherContain  .voucherBody .titleVoucherBody p{
+    color: gray;
+}
+.listVoucher{
+    padding: 5px;
+    height: max-content;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+.voucherContain  .voucherBody .listVoucher .vouchercontent{
+    display: flex;
+    margin-bottom: 20px;
+    width: fit-content;
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 50%);
+    border-radius: 5px;
+
+}
+
+.voucherContain .voucherBody .voucherText{
+    width: 380px;
+    padding: 10px 0;
+    padding-left: 15px;
+}
+.context{
+    border-left: 1px dashed gray;
+}
+.voucherContain  .voucherBody  .voucherText .date{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+.voucherContain  .voucherBody  .voucherText .date p{
+    font-size: 14px;
+    padding-top: 7px;
+}
+.voucherContain  .voucherBody  .voucherText .date button{
+    padding: 5px 10px;
+}
+.voucherContain  .voucherBody  .voucherText .date button:hover{
+    opacity: 0.7;
+}
+/* voucher đã chọn */
+.cart-foot .vouchers  .contantVoucher {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 50%);
+    height: 67px;
+}
+.cart-foot .vouchers  .contantVoucher img{
+    width: 55px;
+    border-radius: 5px;
+    padding: 0;
+    margin: 5px;
+}
+.cart-foot .vouchers  .contantVoucher .context{
+    display: flex;
+    line-height: 65px;
+    padding:0  5px;
+    border-left: 1px dashed gray;
+
+    justify-content: space-between;
+    width: 100%;
+}
+.context p{
+    width: 95%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.context button{
+    border: 1px solid blue;
+    height: 25px;
+    margin-top: 20px;
+    background-color: blue;
+    border-radius: 5px;
+    padding: 0 5px;
+    color: white;
+    cursor: pointer;
+}
+.userVoucher{
+    position: fixed;
+    top: 40%;
+    left: 35%;
+    text-align: center;
+    background-color: rgba(126, 194, 221, 0.938);
+    border-radius: 5px;
+    padding: 20px;
+}
+.userVoucher i{
+    font-size: 40px;
+    color: blue;
+    margin-bottom: 20px;
+}
+.userVoucher p{
+    color: blue;
+}
+.cart-foot .vouchers  .contantVoucher .context button:hover{
+    opacity: 0.7;
+}
+.bordercolor{
+    border: 2px solid blue;
+    background-color: rgba(220, 238, 248, 0.89);
+}
+.bordercolor .context{
+    border-left: 1px dashed blue;
+}
+.position{
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.position p{
+    vertical-align: middle;
+    cursor: pointer;
+}
+.position p i{
+    vertical-align: middle;
+    margin: 0 5px;
+}

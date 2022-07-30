@@ -1,0 +1,96 @@
+body{
+    background: url(../image/DO5005BU02R.jpg) repeat ;
+}
+.login-main{
+    display: block;
+    width: 100vw;
+    /* height: 100vh; */
+    padding:10vh 0;
+    line-height: 2;
+    font-size: 18px;
+}
+.login-main .nav-bar  .login-container a{
+    text-align: center;
+}
+.login-main .nav-bar  .login-container  img{
+    height: 150px;
+    margin-left: 70px;
+}
+
+.login-container{
+    display: block;
+    width: 30vw;
+    /* height: 80vh; */
+    min-height: 500px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    padding: 20px 40px;
+}
+a.logo{
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#noUser,  p#noPassw{
+    font-size: 15px;
+    color: red;
+}
+
+.form-login p{
+    font-size: 15px;
+    color: red;
+}
+
+.formIn{
+    display: grid;
+    position: relative;
+    padding: 10px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+}
+#btn-login, #btn-register{
+    margin: 20px 0;
+    border: 0;
+    padding: 150x;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+#btn-login{
+    background-color: #1877f2;
+    
+}
+button:hover{
+    opacity: 0.8;
+}
+
+#btn-register{
+    background-color: #00a400;
+}
+.forgot-password{
+    text-align: center;
+    color: #1877f2;
+    cursor: pointer;
+}
+.forgot-password:hover{
+    color: black;
+}
+.positionDiv{
+    position: relative;
+}
+i.far{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    cursor: pointer;
+}
+button{
+    font-size: 25px;
+}

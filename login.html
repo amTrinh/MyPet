@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-login.css">
+    <script src="javascript/js-login.js" defer></script>
+    <title>Log in</title>
+</head>
+<body>
+    <div class="login-main">
+        <div class="nav-bar">
+            <div class="login-container">
+                <img src="image/logo_doc.png" alt="LOGO">
+                <form id="form-login">
+                    <label for="username">Username:</label>
+                    <input id="username" name="username" class="formIn" type="text" placeholder="Enter Username">
+                    <p id="noUser"></p>
+                    <label for="password">Password:</label>
+                    <div class="positionDiv">
+                        <input id="password" name="password" class="formIn" type="password" placeholder="Enter Password">
+                        <i id="eyeshow" class="far fa-eye"></i>
+                        <i id="eyehide" class="far fa-eye-slash"></i>
+                    </div>
+                    <p id="noPassw"></p>
+                    <button type="button" id="btn-login" class="formIn" onclick="test();">Log In</button>
+                    <a class="forgot-password">Forgot password?</a>
+                </form>
+                <hr></hr>
+                <button type="button" id="btn-register" class="formIn btn_Res">Register</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

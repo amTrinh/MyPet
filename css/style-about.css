@@ -1,0 +1,398 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.clearfloat{
+    clear:both;
+}
+.section-head{
+    background-image:url(../image/blog-head.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    height:580px;
+    padding-top:100px;
+}
+.section-logo{
+    width:fit-content;
+    text-align:center;
+}
+.section-logo>p{
+    font-size:40px;
+}
+.section-content{
+    background-color:white;
+    width:34%;
+    height:140px;
+    padding:10px;
+    margin-top:80px;
+}
+.section-title{
+    font-size:39px;
+    font-weight: bold;
+}
+.section-content>hr{
+    border-width:0;
+    border-top:2px solid black;
+    width:320px;
+    margin:10px 0 30px;
+}
+.section-ps{
+    color:rgb(82, 82, 82);
+    font-weight: bold;
+    font-size:21px;
+}
+/*Định dạng flex chung*/
+.center-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.line-content{
+    display:flex;
+    justify-content: space-between;
+}
+/*Kết thúc định dạng flex chung*/
+.hi{
+    font-size:50px;
+    margin: 60px 0;
+}
+.info{
+    width:78%;
+}
+.info-detail{
+    padding-top:30px;
+}
+.quote{
+    font-size:25px;
+    text-align:center;  
+}
+.adapt{
+    color:grey;
+    margin: 15px 0 30px;
+}
+.static {
+    margin-top:25px;
+    width:100%;
+    text-align:center;
+}
+.static>p{
+    color:rgb(82, 82, 82);
+    font-size:25px;
+    font-weight:bold;
+}
+.words{
+    width:60%;
+    font-size:40px;
+    font-weight:bold;
+    margin:50px 0;
+}
+hr{
+    width:30%;
+    border-width:0px;
+    border-top:3px dotted black;
+}
+.icon-circle>span{
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background-color:blue;
+    border:1px solid blue;
+}
+.shortcuts-line1{
+    font-size:40px;
+    margin:50px 0 10px;
+}
+.shortcuts-line2{
+    font-size:22px;
+    margin:5px 0 30px;
+}
+/* Shortcuts effect */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+.shortcuts-dot{
+    text-align:center;
+}
+@-webkit-keyframes fade {
+    from {opacity: .6} 
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .6} 
+    to {opacity: 1}
+}
+.dot {
+    cursor:pointer;
+    height: 20px;
+    width: 20px;
+    margin: 13px 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+.active{
+    background-color: #717171;
+}
+/* end Shortcuts effect */
+.team{
+    width:80%;
+    margin:100px 0;
+}
+.team-title{
+    background-color:rgb(153,222,255);
+    font-weight:bold;
+    font-size:35px;
+    padding:13px 40px 5px 5px;
+    width:fit-content;
+    position:absolute;
+}
+.team-personality{
+    margin-top:95px;
+    font-weight:bold;
+    color:rgb(97, 97, 97);
+    font-size:25px;
+    font-family:'Times New Roman', Times, serif;
+}
+.team-content-detail{
+    width:46%;
+    position:absolute;
+    font-size:20px;
+}
+.team-atr{
+    width:fit-content;
+    margin-top: 100px;
+    margin-left: 60px;
+    text-align:center;
+    font-size:30px;
+}
+.team-atr>p{
+    font-family:'Times New Roman', Times, serif;
+}
+.team-atr>hr{
+    border-width:0;
+    border-top:2px solid black;
+    width:30%;
+    margin:20px auto;
+}
+/* Words Effect */
+.team-atr>p
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+/* End Words Effect */
+.team-image{
+    float:right;
+    width:60%;
+    text-align:right;
+}
+.team-image>img{
+    margin-bottom:20px;
+}
+.learn{
+    text-align:center;
+    background-color:rgb(47,182,255);
+    color:white;
+    font-size:35px;
+    font-weight:bold;
+    padding:30px;
+    width:100%;
+}
+/*Định dạng chung cho các mục trong learn*/
+.learn-detail{
+    background-repeat: no-repeat;
+    background-size:cover;
+    width:75%;
+    height:400px;
+    padding-top:100px;
+    margin-top:30px;
+}
+.learn-detail>p{
+    text-align:center;
+    background-color:rgb(0,0,0,0.55);
+    width:50%;
+    font-weight:bold;
+    border:5px solid rgb(255,255,255,0.8);
+    margin: 0 auto;
+    padding:70px 0;
+    font-size:45px;
+    color:white;
+}
+/* Kết thúc*/
+.whatwedo{
+    background-image:url(../image/whatwedo.jpg);
+    transition: background-image 0.6s ease-out;
+}
+/* .whatwedo:hover{
+    background-image:url(../image/whatwedo.jpg);
+} */
+.howwethink{
+    background-image:url(../image/howwethink.jpg);
+    transition: background-image 0.6s ease-out;
+}
+/* .howwethink:hover{
+    background-image:url(../image/howwethink.jpg);
+} */
+.petwelove{
+    background-image:url(../image/petwelove.jpg);
+    transition: background-image 0.6s ease-out;
+}
+/* .petwelove:hover{
+    background-image:url(../image/petwelove.jpg);
+} */
+.story{
+    background-color:rgb(233,247,254);
+    width:100%;
+    margin-bottom:70px;
+    padding: 20px 290px;
+    text-align:center;
+}
+.story>h4{
+    font-size:30px;
+    margin:20px;
+}
+.story>p{
+    margin: 10px 0;
+    font-size:25px;
+}
+#story-btn {
+    background-color:black;
+    font-size:20px;
+    padding:10px;
+    margin:20px;
+    border-radius:30px;
+}
+#story-btn>a{
+    color:white;
+}
+.icon-hand{
+    color:white;
+    animation: mymove 2s infinite;
+}
+@keyframes mymove {
+    0% {
+      transform: translateX(0%);
+    }
+  
+    5% {
+      transform: translateX(300%);
+      color:blue;
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+.service{
+    display:flex;
+    width:70%;
+    margin-left:200px;
+    flex-wrap: wrap-reverse;
+}
+.service>div{
+    width:40%;
+    height:230px;
+    background-size:cover;
+    font-size:22px;
+    padding:90px 20px 0;
+}
+.service-name{
+    background-color:rgb(233,247,254);
+}
+.contact{
+    background-image:url(../image/contact-service.png);
+}
+.contact:hover{
+    height:280px;
+    width:400px;
+    position:absolute;
+    margin-left:354px;
+}
+.blog{
+    background-image:url(../image/blog-service.jpg);
+}
+.shopping{
+    background-image:url(../image/shopping-service.jpg);
+}
+/* hover cua blog va shopping se lam bang jquery */
+
+.service-detail>p{
+    margin:13px 0;
+}
+.thankyou{
+    font-weight:bold;
+    font-size:30px;
+    margin:80px 0 20px;
+}
+.section-foot{
+    width:75%;
+    height:240px;
+    margin:20px;
+}
+.findjoin{
+    background-image:url(../image/nen-khoi.gif);
+    flex-basis:45%;
+    font-size:30px;
+    font-weight:bold;
+    padding:40px 30px;
+}
+.findus-icon{
+    margin-top:30px;
+    margin-left:40px;
+    width:80%;
+}
+.findus-icon>img{
+    cursor:pointer;
+}
+.joinus{
+    background-image:url(../image/join.jpg);
+    background-size:cover;
+    flex-basis:45%;
+    text-align:center;
+}
+.black{
+    background-color:rgb(0,0,0,0.5);
+    width:100%;
+    height:240px;
+}
+.black>p{
+    color:white;
+}
+#join-btn{
+    background-color:black;
+    
+    font-size:27px;
+    padding:10px;
+    margin-top:30px;
+    cursor:pointer;
+}
+#join-btn>a{
+    color:white;
+}

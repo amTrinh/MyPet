@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-payment.css">
+    <link rel="stylesheet" href="css/style-shipping.css">
+    <script type="module" src="javascript/js-shipping.js" defer></script>
+    <title>Delivery information</title>
+</head>
+<body>
+    <section class="head">
+        <div class="head-contain">
+            <a href="home.html" class="logo">
+                <img src="image/logo_deli.png" alt="">
+            </a>
+        </div>
+    </section>
+    <section class="body">
+        <div class="selectAddress">
+            <h3>Choose from the available shipping addresses below:</h3>
+            <div class="shippingAddress">
+                <div class="shippingContain selected">
+                    <div class="info">
+                        <i class="defaul">defaul</i>
+                        <h4 class="username">Nguyen Thi Mai Trinh</h4>
+                        <p>Address: <span>Cua Dong Ward, Hoan Kiem District, Hanoi Vietnam</span></p>
+                        <p>Phone: <span>0941695790</span></p>
+                    </div>
+                    <div class="btn">
+                        <button class="shipto">Ship to this address </button>
+                        <button class="fix">Fix</button>
+                    </div>
+                </div>
+                <div class="shippingContain">
+                    <div class="info">
+                        <i class="defaul"></i>
+                        <h4 class="username">Nguyen Thi Mai Trinh</h4>
+                        <p>Address: <span>Quarter 6, Linh Trung Ward, Thu Duc District, Ho Chi Minh City, Vietnam</span></p>
+                        <p>Phone: <span>012345678</span></p>
+                    </div>
+                    <div class="btn">
+                        <button class="shipto">Ship to this address </button>
+                        <button class="fix">Fix</button>
+                    </div>
+                </div>
+            </div>
+            <div class="btn_OK">
+                <button><a href="payment.html">OK</a></button>
+            </div>
+            <p>
+                Want to deliver to another address? 
+                <a id="showNewAddress">Add new shipping address</a>
+            </p>
+        </div>
+        <div class="newAddress overlay">
+            <form action="" method="post" id="newAddress">
+                <div class="formContain">
+                    <label for="username">Full name:</label>
+                    <input type="text" name="username" id="username" placeholder="Enter full name">
+                    <label for="phone">Phone number: </label>
+                    <input type="number" name="phone" id="phone" placeholder="Enter phone number">
+                    <label for="addressInfo">Address:</label>
+                    <textarea name="addressInfo" id="addressInfo" cols="30" rows="5" placeholder="Enter address"></textarea>
+                </div>
+                <div class="btnAddress">
+                    <button type="button" id="deleteAdd">Hủy bỏ</button>
+                    <button type="button" id="shipAddress"><a href="payment.html">Ship to this address</a></button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div id="footerContain">
+    </div>
+</body>
+</html>

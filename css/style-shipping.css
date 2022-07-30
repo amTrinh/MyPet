@@ -1,0 +1,138 @@
+.body{
+    min-height: 345px;
+}
+.shippingAddress{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    margin: 20px 0;
+    grid-gap: 20px;
+}
+.shippingContain{
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    height: 155px;
+    position: relative;
+}
+.selected{
+    border: 2px dashed green;
+
+}
+.shippingContain .info{
+    line-height: 1.3;
+}
+.shippingContain .info i{
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: green;
+}
+.shippingContain .info p{
+    font-weight: 600;
+}
+.shippingContain .info span{
+    font-weight: lighter;
+}
+.shippingContain .btn{
+    margin-top: 20px;
+    position: absolute;
+    bottom: 10px;
+}
+.shippingContain .btn button{
+    padding: 7px 20px;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+}
+button:hover{
+    opacity: 0.8;
+}
+.selected .btn button.shipto{
+    background-color: rgba(0, 0, 255, 0.842);
+    color: white;
+    border: 1px solid blue;
+}
+.btn button.shipto{
+    border: 1px solid gray;
+}
+.shippingContain .btn button.fix{
+    border: 1px solid gray;
+
+}
+.selectAddress p a{
+    color: blue;
+    cursor: pointer;
+}
+.overlay{
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: 0.5s;
+    margin-top: 20px;
+    /* border: 2px solid gray; */
+}
+.btn_OK{
+    width: 100%;
+    text-align: end;
+}
+.btn_OK button{
+    padding:  10px;
+    width: 150px;
+    border-radius: 5px;
+    border: 1px solid red;
+    background-color: rgb(247, 111, 48);
+    cursor: pointer;
+}
+.btn_OK button a{
+    color: white;
+
+}
+form#newAddress{
+    width: max-content;
+    margin: 20px auto;
+}
+form#newAddress .formContain{
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+form#newAddress .formContain label{
+    margin: auto 0;
+    font-weight: bolder;
+}
+form#newAddress .formContain input, form#newAddress .formContain textarea{
+    padding: 7px 10px;
+    border-radius: 5px;
+    margin: 5px 10px;
+    outline: none;
+    border: 1px solid gray;
+    max-width: 430px;
+    min-width: 430px;
+    max-height: 96px;
+}
+form#newAddress .formContain input::placeholder, form#newAddress .formContain textarea::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+form#newAddress .btnAddress{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+form#newAddress .btnAddress button{
+    width: 205px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+    padding: 10px;
+}
+form#newAddress .btnAddress button:hover{
+    opacity: 0.7;
+}
+form#newAddress .btnAddress button#shipAddress{
+    background-color: rgba(0, 0, 255, 0.842);
+    color: white;
+    border: 1px solid blue;
+}

@@ -1,0 +1,123 @@
+.productPayment img{
+    width: 150px;
+}
+h2{
+    font-weight: lighter;
+}
+ul, li{
+    margin: 0;
+    padding: 0;
+}
+.myorder .orderhead{
+    margin-bottom: 20px;
+}
+.myorder .orderhead p{
+    text-align: end;
+}
+.myorder .deliverInfo div.deliverGeneral{
+    width: 30%;
+    float: left;
+    margin-right: 5%;
+    margin-bottom: 30px;
+}
+.myorder .deliverInfo div.deliverGeneral h3{
+    text-transform: uppercase;
+    /* font-weight: 500; */
+}
+.myorder .deliverInfo div.methodPayment{
+    margin-right: 0;
+
+}
+.myorder .deliverInfo div.deliverGeneral .deliverDetail{
+    margin-top: 10px;
+    background-color: white;
+    height: 120px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    padding: 10px;
+    border-radius: 5px;
+    line-height: 1.5;
+}
+.myorder .deliverInfo div.deliverGeneral .deliverDetail p{
+    text-transform: capitalize;
+}
+.detail_product{
+    clear: both;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    padding: 20px;
+}
+
+.myorder .detail_product .border{
+    padding: 10px 10px;
+    border-bottom: 1px solid gray;
+    position: relative;
+}
+.myorder ul li{
+    display: inline-block;
+    width: 9.5%;
+    
+    margin: auto 0;
+}
+ul li div{
+    display: flex;
+    line-height: 100px;
+}
+.detail_head ul li div p{
+    margin-left: 20px;
+}
+.detail_head ul li:nth-child(1){
+    width: 60%;
+}
+.detail_head ul li:nth-child(5), .detal_products_info ul li:nth-child(4){
+    text-align: end;
+}
+.detal_products_info {
+    display: flex;
+}
+.detal_products_info:hover{
+    background-color: #ddd;
+}
+.detal_products_info  div{
+    width: 60%;
+}
+.detal_products_info ul{
+    width: 40%;
+}
+.detal_products_info ul li{
+    width: 24%;
+    height: 100%;
+    line-height: 100px;
+}
+.detal_products_info div p img{
+    vertical-align: middle;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.total_payment{
+    text-align: end;
+}
+.total_payment div p{
+    display: inline-block;
+    width: 150px;
+    text-transform: capitalize;
+    line-height: 1.5;
+}
+.total_payment div p.priceTotal{
+    color: red;
+    font-size: 20px;
+}
+.btn button{
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 18px;
+    width: 200px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn button:hover{
+    opacity: 0.8;
+}

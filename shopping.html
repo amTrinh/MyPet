@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-shopping.css">
+    <script type="module" src="javascript/import_template.js"></script>
+    <script type="module" src="javascript/home-product.js" defer></script>
+    <script src="javascript/javascript.js" defer></script>
+    <script src="javascript/js-shopping.js" defer></script>
+    <title>Shopping</title>
+</head>
+<body>
+    <div id="headerContain">
+    </div>
+    <div class="banner" id="banner-voucher">
+        <div class="container-voucher container">
+            <div class="navbar-container-voucher">
+                <div class="navbar-icon icon-liveshow icon-liveshow-prev">
+                    <i class="fas fa-chevron-circle-left"></i>
+                </div>
+                <div class="liveshows">
+                     <div class="liveshow-detail liveshow-voucher  now-voucher ">
+                         <div class="voucher-container">
+                             <div class="liveshow-voucher-content">
+                                 <h2>Golden day special offer</h2>
+                                 <h3>Sale off</h3>
+                                 <h1> 50%</h1>
+                                 <p>Only on <span>Wednesday</span> everyweek</p>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="liveshow-detail liveshow-freeship review-hidden">
+                        <div class="freeship-contain">
+                            <h2 class="freeship">FreeShip</h2>
+                            <img class="news-gif" src="image/news-gif.gif" alt="gif">
+                            <p class="hoadon">for bill over</p>
+                            <h1>1 Million</h1>
+                            <p class="muahang">
+                                Shopping
+                                <span>Unlimitedly</span>
+                            </p>
+                            <img class="gif-thaga" src="image/1602064584_19076.gif" alt="gif">
+                            <p class="khonglo">
+                                Not worrying about
+                                <span class="ship">Ship</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="liveshow-detail liveshow-policy review-hidden ">
+                         <div class="policy-contain">
+                             <div class="policy-top">
+                                 <h3>Policy</h3>
+                                 <h4>interest customer</h4>
+                                 <h2>Warranty</h2>
+                                 <h4>According to contract term</h4>
+
+                             </div>
+                             <p class="policy-line"><span></span></p>
+                             <div class="policy-bottom">
+                                 <p>attractive coupons</p>
+                                 <p>paying by instalments</p>
+                             </div>
+                            <h1><span>1</span> 
+                                <!-- Exchange  -->
+                                <i class="fas fa-sync-alt"></i>
+                                <span>1</span></h1>
+                            <h2 class="policy-per">0%</h2>
+                            <img src="image/pets.jpg" alt="pets">
+                         </div>
+                    </div>
+                </div>
+                <div class="navbar-icon icon-liveshow icon-liveshow-next">
+                    <i class="fas fa-chevron-circle-right"></i>
+                </div>
+                <div class="footer-reviews btn-icon-liveshow">
+                    <i id="icon1" data-id="1" class="bgIcon icon-voucher-show far fa-circle icon-circle-voucher"></i>
+                    <i id="icon2" data-id="2" class="far fa-circle icon-circle-voucher"></i>
+                    <i id="icon3" data-id="3" class="far fa-circle icon-circle-voucher"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner-shopping-detail" id="banner-shopping-detail">
+        <section class="section-navbar-shopping" id="shopping-home">
+            <div  class="nav-shopping-menu">
+                <ul id="menu-products">
+                    <li id="pets_filter" onclick="filterSelection('pets')" data-id="7" class="li-detail-shopping menu-product-title">PETS</li>
+                    <ul class="menu-pets-shopping">
+                        <li data-id="1" class="li-detail-shopping item-show li-pets-shopping" onclick="filterSelection('dog')">Dogs</li>
+                        <li data-id="2" class="li-detail-shopping li-pets-shopping" onclick="filterSelection('cat')">Cats</li>
+                    </ul>
+                    <li id="product_filter" onclick="filterSelection('products')" data-id="2" class="menu-product-title">PRODUCTS</li>
+                    <ul class="menu-items-shopping">
+                        <li data-id="3" class="li-detail-shopping li-items-shopping" onclick="filterSelection('food')">Foods</li>
+                        <li data-id="4" class="li-detail-shopping li-items-shopping" onclick="filterSelection('toy')">Toys</li>
+                        <li data-id="5" class="li-detail-shopping li-items-shopping" onclick="filterSelection('medi')">Medicines</li>
+                        <li data-id="6" class="li-detail-shopping li-items-shopping" onclick="filterSelection('furn')">Furniture</li>
+                    </ul>
+                </ul>
+            </div>
+            <div class="nav-shopping-detail">
+                <div class="sort-contain">
+                    <span class="title-sort">Sorted by</span>
+                    <div class="sort-arr">
+                        <ul class="sort-arr-detail">
+                            <li onclick="filterSelection('popular')"  class="li-sort backg-white title-sort-arr-detail">Popular</li>
+                            <li onclick="filterSelection('news')" class="li-sort backg-white title-sort-arr-detail">News</li>
+                            <li onclick="filterSelection('selling')" class="li-sort backg-white title-sort-arr-detail">Selling</li>
+                            <li class="li-price backg-white">
+                                <div class="nav-price">
+                                    <div class="nav-price-title">
+                                        <p class="content-price">
+                                            <span class="content-price-name">Price</span>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </p>
+                                    </div>
+                                    <div class="sort-price-select">
+                                        <ul>
+                                            <li onclick="filterSelection('high')" class="li-sort-price price-short">Price: Low to High</li>
+                                            <li onclick="filterSelection('low')" class="li-sort-price price-high">Price: High to Low</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="containt-dogs detail-home" id="detail-shopping"> 
+                    <article class="product-pet dog pets popular">
+                        <div class="img-container">
+                            <img src="image/dog0.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="1">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>shiba inu</h4>
+                                <h4>$499.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet dog pet high">
+                        <div class="img-container">
+                            <img src="image/dog1.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="2">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Husky Sibir</h4>
+                                <h4>$200.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet medi products low">
+                        <div class="img-container">
+                            <img src="image/medi5.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="3">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>cras</h4>
+                                <h4>$10.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet medi products selling">
+                        <div class="img-container">
+                            <img src="image/medi6.jfif" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="4">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Aenean</h4>
+                                <h4>$19.9</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet dog pets selling">
+                        <div class="img-container">
+                            <img src="image/dog6.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="5">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>huisdier hond</h4>
+                                <h4>$1009.9</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet cat pets news ">
+                        <div class="img-container">
+                            <img src="image/maine-coon.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="6">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Maine Coon</h4>
+                                <h4>$1999.99</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet cat pets news">
+                        <div class="img-container">
+                            <img src="image/Persian.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="7">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Persian</h4>
+                                <h4>$1999.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet food products popular">
+                        <div class="img-container">
+                            <img src="image/food7.webp" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="8">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Predogen</h4>
+                                <h4>$19.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet toy products popular">
+                        <div class="img-container">
+                            <img src="image/toy1.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="9">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Pellentesque</h4>
+                                <h4>$19.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet toy products high">
+                        <div class="img-container">
+                            <img src="image/toy0.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="10">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Elementum</h4>
+                                <h4>$29.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet cat pets low">
+                        <div class="img-container">
+                            <img src="image/Ragdoll.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="11">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Ragdoll</h4>
+                                <h4>$1009.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet cat pets hight">
+                        <div class="img-container">
+                            <img src="image/Savannah.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="12">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Savannah</h4>
+                                <h4>$1909.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet cat pets popular">
+                        <div class="img-container">
+                            <img src="image/Scottish-Fold.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="13">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Scottish Fold</h4>
+                                <h4>$2009.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet cat pets news">
+                        <div class="img-container">
+                            <img src="image/Cornish-Rex.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="14">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Cornish Rex</h4>
+                                <h4>$999.99</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet cat pets selling">
+                        <div class="img-container">
+                            <img src="image/Turkish-Van.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="15">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Turkish Van</h4>
+                                <h4>$3009.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet food products high">
+                        <div class="img-container">
+                            <img src="image/SmartHeart.gif" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="16">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>SmartHeart</h4>
+                                <h4>$1009.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet food products low">
+                        <div class="img-container">
+                            <img src="image/food2.png" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="17">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Whiskas</h4>
+                                <h4>$29.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet food products popular">
+                        <div class="img-container">
+                            <img src="image/food4.jfif" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="18">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Morbi tristique</h4>
+                                <h4>$29.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet food products news">
+                        <div class="img-container">
+                            <img src="image/food3.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="19">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Quisque</h4>
+                                <h4>$19.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet dog pets high">
+                        <div class="img-container">
+                            <img src="image/dog2.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="20">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Husky Sibir</h4>
+                                <h4>$2900.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet dog pets low">
+                        <div class="img-container">
+                            <img src="image/dog4.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="21">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Bulldog</h4>
+                                <h4>$9999.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet dog pets">
+                        <div class="img-container">
+                            <img src="image/dog5.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="22">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Whiskas</h4>
+                                <h4>$29.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet food selling products">
+                        <div class="img-container">
+                            <img src="image/food5.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="23">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Me-O</h4>
+                                <h4>$29.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet food products">
+                        <div class="img-container">
+                            <img src="image/food6.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="24">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Whiskas</h4>
+                                <h4>$29.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet toy news products">
+                        <div class="img-container">
+                            <img src="image/toy2.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="25">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Etiam</h4>
+                                <h4>$59.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet toy products selling">
+                        <div class="img-container">
+                            <img src="image/toy3.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="26">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Ultrices</h4>
+                                <h4>$59.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet toy low products">
+                        <div class="img-container">
+                            <img src="image/toy4.jfif" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="27">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Lectus</h4>
+                                <h4>$59.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet toy products">
+                        <div class="img-container">
+                            <img src="image/toy5.jpeg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="28">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Lobortis</h4>
+                                <h4>$59.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet toy products">
+                        <div class="img-container">
+                            <img src="image/toy6.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="29">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Praesent</h4>
+                                <h4>$9.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet medi products low">
+                        <div class="img-container">
+                            <img src="image/medi0.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="30">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Royal Canin</h4>
+                                <h4>$59.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet medi products popular">
+                        <div class="img-container">
+                            <img src="image/medi2.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="31">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Vestibulum</h4>
+                                <h4>$19.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet medi products">
+                        <div class="img-container">
+                            <img src="image/medi3.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="32">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Enim</h4>
+                                <h4>$59.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet medi products high">
+                        <div class="img-container">
+                            <img src="image/medi4.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="33">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Quisque</h4>
+                                <h4>$59.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet furn products news">
+                        <div class="img-container">
+                            <img src="image/furn0.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="34">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Proin</h4>
+                                <h4>$59.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet furn products">
+                        <div class="img-container">
+                            <img src="image/furn1.jfif" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="35">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Fusce</h4>
+                                <h4>$59.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet furn products news">
+                        <div class="img-container">
+                            <img src="image/furn2.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="36">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Sed porta</h4>
+                                <h4>$59.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet furn products selling">
+                        <div class="img-container">
+                            <img src="image/furn3.webp" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="37">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Morbi quam</h4>
+                                <h4>$59.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet furn products high">
+                        <div class="img-container">
+                            <img src="image/furn4.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="38">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Suspendisse</h4>
+                                <h4>$59.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet furn products popular">
+                        <div class="img-container">
+                            <img src="image/furn5.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="39">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Aliquam</h4>
+                                <h4>$59.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet furn products">
+                        <div class="img-container">
+                            <img src="image/furn6.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="40">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>Pellentesque</h4>
+                                <h4>$59.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="product-pet medi products">
+                        <div class="img-container">
+                            <img src="image/medi1.jpg" alt="Pets" class="product-pet-image">
+                            <button class="bag-btn" data-id="41">
+                                <i class="fas fa-shopping-cart"></i>
+                                add to bag
+                            </button>
+                        </div>
+                        <div class="img-footer">
+                            <div class="text-discript">
+                                <h4>nexgard</h4>
+                                <h4>$1.09</h4>
+                            </div>
+                            <div class="see-more-detail">
+                                <a href="detail-product.html">Detail</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>                    
+            </div>
+ 
+        </section>
+    </div>
+    <div id="footerContain">
+    </div>
+    <div id="iconContain">
+    </div>
+    <div class="notify-product">
+        <div class="notify-contain">
+            <i class="fas fa-check-circle"></i>
+            <p>The product has been added to Cart</p>
+        </div>
+    </div>
+</body>
+</html>

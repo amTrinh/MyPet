@@ -1,0 +1,293 @@
+body{
+    background-color: rgb(243, 243, 243);
+}
+img{
+    width: 100px;
+    height: auto;
+}
+section.body .contain .left .methods img{
+    width: 30px;
+    height: auto;
+}
+.head{
+    box-shadow: rgb(0 0 0 / 20%) 0px 1px 2px;
+    background-color: white;
+
+}
+.head .head-contain{
+    width: 80vw;
+    margin: 0 auto;
+}
+.head .head-contain .logo{
+    margin-right: 50px;
+}
+.head .head-contain .payHead{
+    border-left: 1px solid black;
+    font-size: 30px;
+    padding-left: 30px;
+}
+section.body{
+    width: 80vw;
+    margin: 30px auto;
+}
+section.body .contain{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+section.body .contain .left{
+    width: 55vw;
+}
+section.body .contain .shadow{
+    margin: 20px 0;
+    box-shadow: rgb(0 0 0 / 20%) 0px 1px 2px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: white;
+}
+section.body .contain .shadow h3{
+    text-transform: capitalize;
+    margin: 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+
+}
+section.body .contain .shadow .titelProduct h3{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+section.body .contain .shadow tr h3{
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+section.body .contain .left .addressContain{
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.2;
+}
+section.body .contain .left .addressContain ul{
+    width: 80%;
+}
+section.body .contain .left .addressContain a{
+    font-weight: bolder;
+    cursor: pointer;
+}
+section.body .contain .left .addressContain a:hover{
+    color: blue;
+}
+section.body .contain .left table{
+    width: 100%;
+}
+
+section.body .contain .left  img{
+    vertical-align: middle;
+    margin: 0 10px;
+    height: 80px;
+    width: auto;
+}
+section.body .contain .left  .methods div {
+    line-height: 1.5;
+}
+section.body .contain .left .listProduct .titelProduct, .productPayment .titelProduct{
+    width: 50%;
+}
+section.body .contain .left .listProduct .InfoPayment, .productPayment .InfoPayment{
+    width: 45%;
+}
+section.body .contain .left .InfoPayment{
+    display: flex;
+    justify-content: space-between;
+}
+section.body .contain .left .productPayment, .contain .left .listProduct{
+    margin-top: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+}
+section.body .contain .left .productPayment .InfoPayment p{
+    line-height: 80px;
+}
+section.body .contain .left .listProduct , .productPayment{
+    display: flex;
+}
+section.body .contain  .right{
+    width: 20vw;
+    position: -webkit-sticky;
+    position: sticky;
+    height: fit-content;
+}
+section.body .contain  .right .checkVoucher .contantVoucher{
+    display: flex;
+}
+section.body .contain  .right .contantVoucher {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px rgb(0 0 0 / 50%);
+    height: 67px;
+    margin-bottom: 15px;
+}
+section.body .contain  .right .contantVoucher img{
+    width: 55px;
+    border-radius: 5px;
+    padding: 0;
+    margin: 5px;
+}
+section.body .contain  .right .contantVoucher .context{
+    display: flex;
+    line-height: 65px;
+    padding:0  5px;
+    border-left: 1px dashed gray;
+    justify-content: space-between;
+    width: 100%;
+}
+section.body .contain  .right #selectVoucher{
+    font-size: 14px;
+    cursor: pointer;
+}
+section.body .contain  .right #selectVoucher:hover{
+    color: blue;
+}
+section.body .contain  .right .contantVoucher .context p{
+    width: 90px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+section.body .contain  .right #discount{
+    color: green;
+}
+section.body .contain  .right .shipping{
+    margin-bottom: 10px;
+}
+#hrOrder{
+    height: 1px;
+    border-width: 0;
+    color: gray;
+    background-color: gray;
+}
+section.body .contain  .right .final{
+    margin-top: 10px;
+}
+section.body .contain  .right .final p:first-child{
+    font-weight: 700;
+}
+section.body .contain  .right .final #final{
+    color: red;
+    font-size: 20px;
+}
+section.body .contain  .right .contantVoucher .context button{
+    border: 1px solid blue;
+    height: 25px;
+    margin-top: 20px;
+    background-color: blue;
+    border-radius: 5px;
+    padding: 0 5px;
+    color: white;
+    cursor: pointer;
+}
+section.body .contain  .right .contantVoucher .context button:hover{
+    opacity: 0.7;
+}
+
+.bordercolor{
+    border: 2px solid blue;
+    background-color: rgba(220, 238, 248, 0.89);
+}
+.bordercolor .context{
+    border-left: 1px dashed blue;
+}
+section.body .contain  .right .order .orderInfo div{
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5;
+}
+section.body .contain  .right .order .orderInfo div p{
+    text-transform: capitalize;
+}
+section.body .contain  .right .ordered button{
+    width: 100%;
+    background-color: red;
+    padding: 10px 0;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    border-radius: 5px;
+}
+section.body .contain  .right .ordered button:hover{
+    opacity: 0.7;
+}
+.successOrdered{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(134, 134, 134, 0.74);
+    position: fixed;
+    top: 0;
+}
+.successOrdered .Orderedcontain{
+    position: relative;
+    width: 20vw;
+    margin: 30vh auto;
+    background-color: white;
+    padding: 5px 30px 30px 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+.successOrdered .Orderedcontain i.fa-times{
+    font-size: 20px;
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+}
+.successOrdered .Orderedcontext{
+    margin-top: 20px;
+}
+.successOrdered .Orderedcontext i{
+    font-size: 50px;
+    color: rgba(0, 0, 255, 0.589);
+}
+.successOrdered .Orderedcontext p{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+.successOrdered .Orderedcontain button{
+    padding: 5px 10px;
+    background-color: blue;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.successOrdered .Orderedcontain button:hover{
+    opacity: 0.7;
+}
+.successOrdered .Orderedcontain button a{
+    color: white;
+}
+.selectRadioBtn #CloseDivRadionBtn{
+    padding: 5px 10px;
+    width: 50px;
+    margin-top: 20px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    border-radius: 5px;
+}
+.selectRadioBtn .selectMethods{
+    top: 30%;
+}
+.CloseIcon{
+    position: relative;
+    height: 20px;
+}
+.CloseIcon .fa-times{
+    font-size: 30px;
+    position: absolute;
+    top: -20px;
+    right: -15px;
+    cursor: pointer;
+}

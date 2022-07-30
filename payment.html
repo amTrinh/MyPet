@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-cart.css">
+    <link rel="stylesheet" href="css/style-payment.css">
+    <script type="module" src="javascript/template_voucher.js"></script>
+    <script type="module" src="javascript/js-payment.js" defer></script>
+    <title>Payment information</title>
+</head>
+<body>
+    <section class="head">
+        <div class="head-contain">
+            <a href="home.html" class="logo" style="vertical-align: middle;">
+                <img src="image/logo_pay.png" alt="">
+            </a>
+        </div>
+    </section>
+    <section class="body">
+        <div class="contain">
+            <div class="left">
+                <div class="address shadow">
+                    <h3>Delivery Address</h3>
+                    <div class="addressContain">
+                        <ul>
+                            <li>Nguyen Thi Mai Trinh</li>
+                            <li>+(84) 941695790</li>
+                            <li>Vinh Moi Village, Viet Tien Commune, Thach Ha District, Ha Tinh Province</li>
+                        </ul>
+                        <a href="shipping.html">Change</a>
+                    </div>
+                </div>
+                <div class="product shadow">
+                    <div class="listProduct">
+                        <div class="titelProduct">
+                            <p><h3>Products</h3></p>
+                        </div>
+                        <div class="InfoPayment">
+                            <p>Đơn giá</p>
+                            <p>Số lượng</p>
+                            <p>Thành tiền</p>
+                        </div>
+                    </div>
+                    <div id="productDetails">
+                        <!-- product list -->
+                       
+                    </div>
+
+                </div>
+                <div class="methods shadow">
+                    <h3>Payment Methods</h3>
+                    <div>
+                        <div class="cash">
+                            <input class="radioBtn" id="delivery" name="method" type="radio">
+                            <label for="delivery">
+                                <span>
+                                    <img src="image/cash.png" alt="methods">
+                                    Cash payment on delivery
+                                </span>
+                            </label>
+                        </div>
+                        <div class="cod">
+                            <input class="radioBtn"id="wallet" name="method" type="radio">
+                            <label for="wallet">
+                                <span>
+                                    <img src="image/cart.png" alt="methods">
+                                    Domestic ATM card/Internet Baking
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="promotion shadow">
+                    <div class="voucherHead">
+                        <h3>Promotion</h3>
+                        <div class="contantVoucher btnmini bordercolor">
+                            <div class="image">
+                                <img src="image/minivoucherimage.png" alt="image voucher">
+                            </div>
+                            <div class="context">
+                                <p title="$30.00 off shipping fee">$30.00 off shipping fee</p>
+                                <div>
+                                    <button class="btnchecked unchecked">Uncheck</button>
+                                </div>
+                            </div>
+                        </div>
+                        <i id="selectVoucher">
+                            <i class="fas fa-ticket-alt"></i>
+                            Select or Enter Promotion
+                        </i>
+                    </div>
+                </div>
+                <div class="order shadow">
+                    <div class="orderhead">
+                        <h3>order</h3>
+                        <div class="orderInfo">
+                            <div class="privisional">
+                                <p>provisional</p>
+                                <!-- <input id="totalhid" type="hidden" value="1200"> -->
+                                <p id="privisional">$1200</p>
+                            </div>
+                            <div class="transport">
+                                <p>transport fee</p>
+                                <p>$30</p>
+                            </div>
+                            <div class="shipping">
+                                <p>shipping promotion</p>
+                                <p id="discount">$30</p>
+                            </div>
+                            <hr id="hrOrder">
+                            <div class="final">
+                                <p>Thành tiền: </p>
+                                <p id="final">$1200</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ordered">
+                    <button>Ordered</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="voucher">
+        <div id="voucher_container">
+        </div>
+        <div class="successVoucher">
+            <div class="userVoucher">
+                <div>
+                    <i class="fas fa-check-circle"></i>
+                    <p>Promotion code has been successfully applied</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="successOrdered">
+        <div class="Orderedcontain">
+            <a href="order.html"><i class="fas fa-times"></i></a>
+            <div class="Orderedcontext">
+                <i class="fas fa-check-circle"></i>
+                <p>Successfull order</p>
+            </div>
+            <button>
+                <a href="order.html">My Order</a>
+            </button>
+        </div>
+    </div>
+    <div class="selectRadioBtn">
+        <div class="userVoucher selectMethods">
+            <div class="CloseIcon close">
+                <i class="fas fa-times"></i>
+
+            </div>
+            <div>
+                <i class="fas fa-exclamation-circle"></i>
+                <p>Select payment methods, please!</p>
+            </div>
+            <button class="close" id="CloseDivRadionBtn">OK</button>
+        </div>
+    </div>
+    <div id="footerContain">
+    </div>
+</body>
+</html>

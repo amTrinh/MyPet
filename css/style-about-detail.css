@@ -1,0 +1,127 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Asap&display=swap"); */
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
+section {
+    margin-top:75px;
+}
+section *{
+    font-family:'Times New Roman', Times, serif;
+}
+.section-head >p{
+    background-color:rgb(107,203,255);
+    height:280px;
+    text-align:center;
+    padding: 75px;
+    font-size:50px;
+    color:white;
+}
+.hairlyFriends{
+    font-family:cursive;
+    font-size:53px;
+}
+.intro{
+    display:flex;
+    width:74%;
+    justify-content: space-between;
+    margin:60px auto;
+    font-size:20px;
+    line-height:25px;
+}
+.intro-item1{
+    flex-basis:35%;
+    font-size:28px;
+}
+.intro-item2{
+    flex-basis: 50%;
+}
+.main *{
+    font-size:26px;
+    color:rgb(97, 97, 97);
+}
+.whatwedo{
+    display:flex;
+}
+.whatwedo-img1{
+    margin-left:100px;
+    width:520px;
+}
+.no1-images{
+    display:flex;
+    align-items:flex-start;
+    margin: 5px auto;
+}
+.whatwedo-img2{
+    margin-left:160px;
+    border:1px solid black;
+    padding:10px;
+}
+.whatwedo-img3{
+    margin: 0 5px;
+    padding:10px;
+    background-color:rgb(218,242,255);
+}
+.no1{
+    padding:65px 15px;
+}
+.no-title{
+    font-weight:bold; 
+}
+.no1-content{
+    list-style-type: disc;
+    list-style-position: inside;
+}
+.no1-content>li{
+    margin:25px auto;
+}
+.howwethink{
+    display:flex;
+    margin:40px 0 40px 155px;
+}
+.no2{
+    flex-basis:28%;
+}
+.no2-content{
+    padding: 0 20px;
+    margin-top:10px;
+}
+.no2-images{
+    flex-basis:70%;
+}
+.no2-images-detail{
+    display:flex;
+}
+.no2-images-detail>img{
+    margin-left:10px;
+}
+.no2-images-diff-chal{
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-between;
+    margin-left:10px;
+}
+.no2-idea{
+    padding:20px 10px; 
+}
+.no2-idea>li{
+    display:inline;
+    margin-right:14px;
+}
+.no3{
+    display:flex;
+    flex-direction:column; 
+    align-items: center;
+    margin-bottom:30px;
+}
+.no3-images{
+    display:flex;
+}
+.no3-title{
+    margin: 40px auto 20px;
+    font-weight:bold;
+}
+

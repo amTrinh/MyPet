@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+section{
+    margin-top:75px;
+}
+.blue{
+    background-color:rgb(215,240,255);
+    padding-top:40px;
+    display:flex;
+}
+.white{
+    background-color:white;
+    width:65%;
+    padding:20px 25px;
+    margin-left:100px;
+}
+.tag{
+    background-color:rgb(94,185,237);
+    width:fit-content;
+    padding:5px 20px;
+    border-radius:20px;
+    font-size:25px;
+}
+.article-title{
+    font-size:37px;
+    margin: 10px auto;
+}
+.article-detail{
+    display:flex;
+    justify-content: space-between;
+    padding: 0 3%;
+    margin: 15px auto;
+}
+.author{
+    display:flex;
+    align-items: flex-start;
+}
+.author-info{
+    margin-left:10px;
+    font-size:20px;
+}
+.author-info>p{
+    margin:15px auto;
+}
+.author-name{
+    color:white;
+    background-color:rgb(0,166,255);
+    text-align:center;
+    margin-top:5px;
+    padding:3px 5px;
+    font-size:20px;
+}
+.time>li{
+    display:inline;
+    margin-left:15px;
+}
+.border{
+    border:3px dotted rgb(0,166,255);
+    padding: 20px 30px;
+    line-height:23px;
+}
+.article-subject{
+    margin-bottom:5px;
+}
+.img1{
+    float:right;
+    margin-top:25px;
+    margin-left:20px;
+}
+.img2{
+    float:left;
+    border-radius:100px;
+    margin-right:22px;
+}
+.clearfloat{
+    clear:both;
+}
+.para1{
+    margin-bottom: 15px;
+}
+.sidebar-blogdetail>li{
+    background-color:white;
+    padding:2px 5px;
+    margin:5px;
+}
+.blue-comment{
+    background-color:rgb(215,240,255);
+    width:65%;
+    margin-left:100px;
+    padding:25px;
+}
+.comment-part{
+    margin-bottom:15px;
+}
+.comment{
+    display:flex;
+    margin-left:20px;
+    margin-top:10px;
+    align-items: flex-start;
+}
+.comment-info{
+    margin-left:20px;
+    width:100%;
+}
+.comment-name{
+    font-weight:bold;
+    font-size:18px;
+}
+.comment-detail {
+    color:grey;
+    font-size:15px;
+}
+.comment-detail>sup{
+    color:grey;
+    font-size:10px;
+}
+#cmtHidden{
+    display:none;
+}
+.comment-content{
+    margin-top:16px;
+}
+#writerComment{
+    margin:16px 0; 
+    width:70%;
+    height:100px;
+    padding:10px;
+}
+#submit-btn{
+    background-color:black;
+    color:white;
+    padding:5px 10px;
+    border-radius:30px;
+}
+.RelatePost{
+    margin:40px 100px;
+    width:65%;
+}
+.news-article{
+    display:flex;
+    margin-bottom:20px;
+}
+.news-detail{
+    flex:1;
+    padding-left:15px;
+}
+.news-time{
+    color:rgb(175, 175, 175);
+    font-size:13px;
+    margin-bottom:5px;
+}
+.news-content{
+    height:160px;
+}
+.news-title{
+    font-weight:bold;
+    font-size:23px;
+    margin-bottom:10px;
+}
+.content{
+    font-size:14px;
+    color:rgb(114, 114, 114);
+}
+.seemore-btn{
+    margin-top:10px;
+    font-size:20px;
+    font-weight: bold;
+    text-align: right;
+}
+hr{
+    border-width:0px;
+    border-top:2px solid black;
+    margin:10px auto;
+}

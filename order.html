@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-user.css">
+    <link rel="stylesheet" href="css/style-order.css">
+    <script type="module" src="javascript/import_template.js"></script>
+    <script type="module" src="javascript/home-product.js" defer></script>
+    <script src="javascript/javascript.js" defer></script>
+    <script src="javascript/js-user.js" defer></script>
+    <script src="javascript/js-order.js" defer></script>
+    <script src="javascript/js_bg_menu.js" defer></script>
+    <title>My Order</title>
+</head>
+<body>
+    <div id="headerContain">
+    </div> 
+    <div class="accountBody">
+        <div class="accountContain">
+            <div class="myorder">
+                <div class="orderhead">
+                    <h2>Order detail <span>#123456</span> -Delivered- </h2>
+                    <p>Order date: <span>15:17 21/10/2021</span></p>
+                </div>
+                <div class="deliverInfo">
+                    <div class="deliverGeneral addressReceiver">
+                        <h3>Receiver's Address</h3>
+                        <div class="deliverDetail">
+                            <h4>Trinh Nguyen Thi Mai</h4>
+                            <p>Address: Mr., Cua Dong Ward, Hoan Kiem District, Hanoi</p>
+                            <p>Phone Number: 0123456789</p>
+                        </div>
+                    </div>
+                    <div class="deliverGeneral deliveryMethod">
+                        <h3>Delivery method </h3>
+                        <div class="deliverDetail">
+                            <p>Fast delivery</p>
+                            <p>delivery time: 01/11/2021</p>
+                            <p>Transport costs: $30</p>
+                        </div>
+                    </div>
+                    <div class="deliverGeneral methodPayment">
+                        <h3>Method payment</h3>
+                        <div class="deliverDetail">
+                            <p>Cash On Delivery (COD)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="detail_product">
+                    <div class="detail_head">
+                        <ul class="border">
+                            <li>Products</li>
+                            <li>Price</li>
+                            <li>quantity</li>
+                            <li>discount</li>
+                            <li>provisional</li>
+                        </ul>
+                    </div>
+                    <div id="productsList" class="productsList">
+                        <!-- display product -->
+                    </div>
+                    <div class="total_payment">
+                        <div>
+                            <p>provisional</p>
+                            <p id="provi">$199.09</p>
+                        </div>
+                        <div>
+                            <p>Transport costs</p>
+                            <p>$30</p>
+                        </div>
+                        <div>
+                            <p>discount</p>
+                            <p>$30</p>
+                        </div>
+                        <div>
+                            <p>total</p>
+                            <p id="priceTotal" class="priceTotal">$199.09</p>
+                        </div>
+                        <!-- <div class="btn">
+                            <button>Cancle Order</button>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footerContain">
+    </div>
+    <div id="iconContain">
+    </div>
+</body>
+</html>

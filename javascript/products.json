@@ -1,0 +1,28 @@
+{
+    "items": [
+        {
+            "sys": {
+                "id": "1",
+                "type": "dog"
+            },
+            "fields":{
+                "title": "Husky Sibir",
+                "price": 500.09,
+                "image": {"fields": {"file":{ "url": "../image/dog1.jpg"}}}
+            }
+        },
+        {
+            "sys": {
+                "id": "2",
+                "type": "dog"
+            },
+            "fields":{
+                "title": "Chihuahua",
+                "price": 25.99,
+                "image": {"fields": {"file":{"url": "../image/dog2.jpg"}}}
+            }
+        }
+        
+    ]
+}
+
